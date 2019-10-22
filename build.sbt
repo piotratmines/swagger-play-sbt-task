@@ -12,3 +12,6 @@ lazy val root = (project in file("."))
     },
     scriptedBufferLog := false
   )
+
+libraryDependencies += guice
+libraryDependencies += "io.swagger" %% "swagger-play2" % "1.6.0"
