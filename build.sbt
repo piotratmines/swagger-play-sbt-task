@@ -13,5 +13,9 @@ lazy val root = (project in file("."))
     scriptedBufferLog := false
   )
 
-libraryDependencies += guice
+libraryDependencies += "com.typesafe.play" %% "play-guice" % "2.6.20"
 libraryDependencies += "io.swagger" %% "swagger-play2" % "1.6.0"
+libraryDependencies += "com.typesafe.play" %% "play-jdbc-api" % "2.6.20"
+libraryDependencies += "com.typesafe.play" %% "play-jdbc" % "2.6.20"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % "test"
